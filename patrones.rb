@@ -72,31 +72,54 @@ end
 
 
 
-       def numero_0(n)
-        # Parte superior
-            n.times do |i|
-                print "*"
-                end
-                print "\n"
-                # Parte del medio
-                        (n - 2).times.do
-                            print "*"
-                            (n - 2).times.do
+    def numero_0(n)
+    # Parte superior
+        n.times do |i|
+        print "*"
+        end
+        print "\n"
+        # Parte del medio 
+                    (n - 2).times do  |i|
+                        (n).times do  |j|
+                            if j ==  i + 1 || j== 0 || j == 4
+                                print "*"
+                            else
                                 print " "
                             end
-                            print "*"
+                        end   
+                        print "\n"
+                    end
+
+        # Parte inferior
+        n.times do |i|
+        print "*"
+        end
+    
+    end
+
+    def letra_x(n)
+ 
+            # Parte del medio 
+                        (n - 2).times do  |i|
+                            (n).times do  |j|
+                                if j ==  i + 1
+                                    print "*"
+                                else
+                                    print " "
+                                end
+                            end   
                             print "\n"
-                        end        
-            
-                    # Parte inferior
-                n.times do |i|
-                print "*"
-                end
-       end
+                        end
+    
+         
+        end
+
+
+
 
 
 n = ARGV[0].to_i
-numero_0(n)
+letra_x(n)
 
 print "\n"
 
