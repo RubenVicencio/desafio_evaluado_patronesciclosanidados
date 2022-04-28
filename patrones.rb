@@ -183,13 +183,27 @@ end
      
      end
          
-        
-
-
 
 n = ARGV[0].to_i
-navidad_x(n)                #NAVIDAD SALE CON 7
-
-print "\n"
-
+#llamado de metodos 
+            print "\n"
+            print "\n"
+letra_o(n)
+            print "\n"
+            print "\n"
+letra_i(n)
+            print "\n"
+            print "\n"
+letra_z(n)
+            print "\n"
+            print "\n"
+letra_x(n)
+            print "\n"
+            print "\n"
+numero_0(n)
+            print "\n"
+            print "\n"
+navidad_x(n)
+            print "\n"
+            print "\n"
 
