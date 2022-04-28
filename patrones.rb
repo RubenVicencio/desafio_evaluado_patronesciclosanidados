@@ -123,13 +123,12 @@ end
  
 #----------------------------------------------------------------------------------  
     
-    def navidad_x(n) #FUNCIONA CON 7 SINO NO SALE AUNQUE LE FALTARON ALGUNAS LUCES
-
+    def navidad_x(n) 
         #Parte de Arriba del Árbol
             
-         (n-5).times do  |i|
-             (n).times do  |j|
-                 if j== i +2 +1 || j== 3-i
+      (n-3).times do  |i|
+             (n+4).times do  |j|
+                 if j== 3-i || j== i + 3
                      print "*"
                  else
                      print " "
@@ -137,50 +136,51 @@ end
              end   
              print "\n"
          end    
-    
-         (n-6).times do  |i|
-            (n).times do  |j|
-                if j== i+1 || j== i + 3 || j== i + 5
-                    print "*"
-                else
+       
+         (n-4).times do  |i|
+            (n-4).times do  |j|
+                if j== 3-i
                     print " "
+                else
+                    print " * * * "
                 end
             end   
             print "\n"
-        end  
+        end 
 
-        (n-6).times do  |i|
-            (n).times do  |j|
-                if j== i*2 || j== i*2+2|| j== i*2+4 || j==i*2+6  
-                    print "*"
-                else
+        (n-4).times do  |i|
+            (n-4).times do  |j|
+                if j== 3-i
                     print " "
+                else
+                    print "* * * *"
+                end 
+            end    
+            print "\n"
+        end 
+
+
+        # Parte del medio
+        (n - 3).times do
+            (n).times do  |i|
+                if i < 3 || i > 3
+                    print " "
+                else
+                    print "*"
                 end
             end   
             print "\n"
         end
-            
-                # Parte del medio
-             (n - 5).times do
-                 (n).times do  |i|
-                     if i < (n / 2) || i > (n / 2)
-                         print " "
-                     else
-                         print "*"
-                     end
-                 end   
-                 print "\n"
-             end
-     
+
              # Parte de abajo
-                 (n).times do |i|
-                     if i.even?
-                     print " "
-                     else
-                         print "*"    
-                     end
-                 end
-     
+             (n - 4).times do |i|
+                print " * * * "    
+                end
+            
+
+
+
+
      end
          
 
